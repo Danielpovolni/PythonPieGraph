@@ -1,15 +1,9 @@
 
-tyzden=[0,0,1,0,1,1,1]
-
-prsalo = round(tyzden.count(1))
-neprsalo = round(tyzden.count(0))
-
-#Pie diagram
+tyzden=[0,0,1,0,1,1,1]    
+dni = ["pondelok","utorok","sreda", "stvrtok","piatok","sobota","nedela"]
 import matplotlib.pyplot as plt
-dazd=[prsalo, neprsalo]
-labels=["prsalo", "neprsalo"]
-plt.figure(figsize=(6,6))
-plt.pie(dazd, labels=labels)
-plt.title("kolko fni prsalo")
+
+plt.plot(dni, tyzden)
+plt.title("kolko prsalo cez tyzdem")
 plt.show()
 plt.close()
